@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>CSE 455 Project</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <i class="fa fa-file-text-o"></i>
+              Document Scanner
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#problem" class="nav-link smoothScroll">Problem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#solution" class="nav-link smoothScroll">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#video" class="nav-link">Presentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link contact">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text">
+
+                                   <h1 class="text-white" data-aos="fade-up"><strong>Scan</strong> Anything.<br>Anywhere. Anytime.</h1>
+
+                                   <a href="#problem" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let us discuss together!</a>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- PROBLEM -->
+     <section class="about section-padding pb-0" id="problem">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                         <div class="about-info">
+
+                              <h2 class="mb-4" data-aos="fade-up"><strong>Problem</strong></h2>
+
+                              <p class="mb-0" data-aos="fade-up">With a sudden lockdown, many people were forced to 
+                                   work and do online schooling. Scanning documents is one of the additional tasks that 
+                                   many people encounter by working from home, and not all of them have a scanner at home. 
+                                   Although there are many scanner applications in the Google stores, not many of them provide 
+                                   a great quality of e-documents. Thus, we would like to attempt to provide a more reliable document  
+                                   scanner that is much accessible to other people.
+                              </p>
+                         </div>
+
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                          <img src="images/newsletter.png" class="img-fluid" alt="office">
+                        </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section class="about section-padding pb-0" id="solution">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                         <div class="about-info">
+
+                              <h2 class="mb-4" data-aos="fade-up"><strong>Solution</strong></h2>
+
+                              <p class="mb-0" data-aos="fade-up">Our current idea is to use the edge detector algorithm to 
+                                   separate the documents from the environment, use a filter to reduce some noise, 
+                                   then sharpen the entire image to give a better resolution. We use OpenCV as our main API
+                                    for this project.
+                              </p>
+                              <br>
+                              <h4 class="mb-4 blog-category text-info" data-aos="fade-up"><strong>Techniques</strong></h4>
+                              <p class="mb-0" data-aos="fade-up">We apply the image processing techniques learned in class to build a scanning app with high quality:</p>
+
+                              <ul class="list-detail py-3" data-aos="fade-up">
+                                   <li>Change image to grayscale and blur image with openCV using Gaussian Blur</li>
+                                   <li>Use Canny Edge detection to detect edges to find paper </li>
+                                   <li>Use Contour to find the largest area in the image to find paper </li>
+                                   <li>Capture the image then process it</li>
+                                   <li>Save the scanned image</li>
+                                   <li>Change saved image to PDF</li>
+                              </ul>
+                              <h4 class="blog-category text-info" data-aos="fade-up"><strong>Tools</strong></h4>
+                              <!-- <p class="mb-0" data-aos="fade-up"> -->
+                              <!-- <ul class="list-detail py-3" data-aos="fade-up"> -->
+                                   <!-- <li>OpenCV, NumPy, Python Imaging Library (PIL) </li> -->
+                                   <p class="mb-0" data-aos="fade-up">OpenCV, NumPy, Python Imaging Library (PIL) </p>
+                              <!-- </ul> -->
+
+
+                         </div>
+
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                          <img src="images/personal-website.png" class="img-fluid" alt="office">
+                        </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- PROJECT -->
+     <section class="project section-padding" id="video">
+          <div class="container-fluid">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <h2 class="mb-5 text-center" data-aos="fade-up">
+                            <strong>Presentation & Demo</strong>
+                        </h2>
+                    </div>
+                         <div class="col-lg-12 col-12">
+                              <div class="" style="text-align: center;"data-aos="fade-up">
+                                  <video class="embed-responsive-item" width="80%" height="auto" controls>
+                                  <source src="final.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                            </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+    <footer class="site-footer" id="about">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100"><strong>Computer Vision</strong><br>Final Project</h1>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="my-4">Group Members</h4>
+            <p class="mb-1">
+              <i class="fa fa-mars mr-2 footer-icon"></i> 
+              Aaron Pham
+            </p>
+            <p class="mb-1">
+               <i class="fa fa-mars mr-2 footer-icon"></i>
+               Abel Milash
+            </p>
+            <p class="mb-1">
+               <i class="fa fa-venus mr-2 footer-icon"></i>
+               Carla Tjung
+             </p>
+             <p class="mb-1">
+               <i class="fa fa-venus mr-2 footer-icon"></i>
+               My Tran
+             </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="my-4"> <br></h4>
+
+            <p class="mb-1">
+              <i class="fa fa-home mr-2 footer-icon"></i> 
+              University of Washington, Seattle Campus.
+            </p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright-text">Copyright &copy; Winter 2021
+            <br>
+            <a rel="nofollow noopener" href="https://courses.cs.washington.edu/courses/cse455/21wi/">CSE 455 Computer Vision</a></p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
